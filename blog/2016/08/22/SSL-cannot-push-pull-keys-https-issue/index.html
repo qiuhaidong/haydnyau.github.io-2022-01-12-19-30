@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>更改了文件_templates/post，以后若出错改回来 - 丘海东</title>
+  <title>路径权限错误，无法pull Push: Not Read From Remote Repository. Correct Access Rights and the Repository Exists. - 丘海东</title>
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="更改了/home/dong/haydnyau/_templates/post
-增加了： categories: ">
+  <meta name="description" content="SSH KEYS认证方式改动
+关于git pull origin sourceorgit push origin source,若出错： fatal: Could not read from remote repository. Please make sure you have the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://haydnyau.github.io/blog/2022/01/07/change-if-error/">
+  <link rel="canonical" href="http://haydnyau.github.io/blog/2016/08/22/SSL-cannot-push-pull-keys-https-issue/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="丘海东" type="application/atom+xml">
@@ -62,7 +62,7 @@
   
   <header>
     
-      <h1 class="entry-title">更改了文件_templates/post，以后若出错改回来</h1>
+      <h1 class="entry-title">路径权限错误，无法pull Push: Not Read From Remote Repository. Correct Access Rights and the Repository Exists.</h1>
     
     
       <p class="meta">
@@ -71,18 +71,30 @@
 
 
 
-<time class='entry-date' datetime='2022-01-07T06:19:02+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:19 am</span></time>
+<time class='entry-date' datetime='2016-08-22T16:58:26+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2016</span></span> <span class='time'>4:58 pm</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>更改了/home/dong/haydnyau/_templates/post
-增加了：</p>
+<div class="entry-content"><p><a href="https://help.github.com/articles/securing-your-github-pages-site-with-https/">SSH KEYS认证方式改动</a>
+关于<code>git pull origin source</code>or<code>git push origin source</code>,若出错：</p>
 
-<pre><code>categories: 
+<pre><code>fatal: Could not read from remote repository. 
+Please make sure you have the correct access rights and the repository exists.
 </code></pre>
+
+<p>SSH keys不用动</p>
+
+<pre><code>gedit octopress/.git/config
+</code></pre>
+
+<p>把<code>url = git@github.com:qiuhaidong/qiuhaidong.github.com.git</code><br/>
+改为<code>url = https://github.com/qiuhaidong/qiuhaidong.github.com.git</code><br/>
+<a href="http://bbs.csdn.net/topics/390909877">参见此Blog，9楼</a><br/>
+done.<br/>
+<code>pull</code>or<code>push</code>时或会报错，但不影响功能，多用几次就好了。</p>
 </div>
 
 
@@ -98,12 +110,12 @@
 
 
 
-<time class='entry-date' datetime='2022-01-07T06:19:02+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:19 am</span></time>
+<time class='entry-date' datetime='2016-08-22T16:58:26+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2016</span></span> <span class='time'>4:58 pm</span></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/tech/'>tech</a>
+    <a class='category' href='/blog/categories/tech-octopress/'>tech-octopress</a>
   
 </span>
 
@@ -119,10 +131,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2022/01/07/octopress3-0/" title="Previous Post: 创建octopress3.0简单说明">&laquo; 创建octopress3.0简单说明</a>
+        <a class="basic-alignment left" href="/blog/2016/08/20/C%23-on-Linux/" title="Previous Post: C# on Linux">&laquo; C# on Linux</a>
       
       
-        <a class="basic-alignment right" href="/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh/" title="Next Post: Octopress 3.0 自动化 build  preview  deploy  push-posts .sh文件">Octopress 3.0 自动化 build  preview  deploy  push-posts .sh文件 &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2016/08/23/install-net-framework-on-windows-server/" title="Next Post: Install .NET Framework on Windows Server">Install .NET Framework on Windows Server &raquo;</a>
       
     </p>
   </footer>
@@ -138,8 +150,8 @@
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/onlyforyou/'>onlyforyou (1)</a></li>
 <li class='category'><a href='/blog/categories/personal/'>personal (92)</a></li>
-<li class='category'><a href='/blog/categories/tech/'>tech (60)</a></li>
-<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (2)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (57)</a></li>
+<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (5)</a></li>
 
   </ul>
 </section>
@@ -156,11 +168,11 @@
       </li>
     
       <li class="post">
-        <a href="/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh/">Octopress 3.0 自动化 Build Preview Deploy Push-posts .sh文件</a>
+        <a href="/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh/">Octopress 3.0 脚本运行 Build Preview Deploy Push-posts .sh文件</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2022/01/07/change-if-error/">更改了文件_templates/post，以后若出错改回来</a>
+        <a href="/blog/2022/01/07/change-templates--post-if-error/">更改了文件_templates/post，以后若出错改回来</a>
       </li>
     
       <li class="post">

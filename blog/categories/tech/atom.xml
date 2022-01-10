@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | 丘海东]]></title>
   <link href="http://haydnyau.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="http://haydnyau.github.io/"/>
-  <updated>2022-01-10T23:34:27+08:00</updated>
+  <updated>2022-01-11T00:11:32+08:00</updated>
   <id>http://haydnyau.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Octopress 3.0 自动化 Build Preview Deploy Push-posts .sh文件]]></title>
+    <title type="html"><![CDATA[Octopress 3.0 脚本运行 Build Preview Deploy Push-posts .sh文件]]></title>
     <link href="http://haydnyau.github.io/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh/"/>
     <updated>2022-01-07T06:34:42+08:00</updated>
     <id>http://haydnyau.github.io/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh</id>
@@ -50,19 +50,6 @@ mv _site/_posts/ .
 
 <p>注意这个点 &ldquo;.&rdquo;
 <code>.</code> 或者 <code>./</code> 表示当前目录</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[更改了文件_templates/post，以后若出错改回来]]></title>
-    <link href="http://haydnyau.github.io/blog/2022/01/07/change-if-error/"/>
-    <updated>2022-01-07T06:19:02+08:00</updated>
-    <id>http://haydnyau.github.io/blog/2022/01/07/change-if-error</id>
-    <content type="html"><![CDATA[<p>更改了/home/dong/haydnyau/_templates/post
-增加了：</p>
-
-<pre><code>categories: 
-</code></pre>
 ]]></content>
   </entry>
   
@@ -412,6 +399,21 @@ iOS14降级为13.5.1：</p>
     <id>http://haydnyau.github.io/blog/2020/06/14/next-computer-partition-capacity-about-ubuntu</id>
     <content type="html"><![CDATA[<p>Ubuntu 分区大小不用太多，现在只用了12G而已，估计下次给它30G就ok了<br/>
 <img src="http://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/jmmX4OKaz9ls*nNN2EORpdUZxewuHv2zzf0xLU5fQbxzOua1RSynmCnzTIHZiqC*6XkA94FYqyCRSoPTFb63m6qEs3HFCGw0gTgyMroP1qA!/r" alt="分区容量" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Install Thundermini on Win10]]></title>
+    <link href="http://haydnyau.github.io/blog/2018/09/23/install-thundermini-on-win10/"/>
+    <updated>2018-09-23T23:59:26+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2018/09/23/install-thundermini-on-win10</id>
+    <content type="html"><![CDATA[<p>在开始菜单，右键，以管理要的身份运行powershell，输入迅雷安装包的路径，如：</p>
+
+<pre><code>D:\a.exe  
+</code></pre>
+
+<p>我是把文件名改为a，放在根目录下，方便输入。<br/>
+done</p>
 ]]></content>
   </entry>
   
