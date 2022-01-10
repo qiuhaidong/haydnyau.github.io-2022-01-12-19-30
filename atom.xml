@@ -1,92 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>丘海东</title>
-  <meta name="author" content="丘海东">
-
-  
-  <meta name="description" content="preview.sh代码 #!/bin/sh
-cd /home/dong/haydnyau
-jekyll build #生成
-jekyll serve deploy.sh代码 #!/bin/sh
-cd /home/dong/haydnyau
-jekyll build
-octopress &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://haydnyau.github.io/">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="丘海东" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">丘海东</a></h1>
-  
-    <h2>Haydn Yau</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
+  <title><![CDATA[丘海东]]></title>
+  <link href="http://haydnyau.github.io/atom.xml" rel="self"/>
+  <link href="http://haydnyau.github.io/"/>
+  <updated>2022-01-10T20:54:01+08:00</updated>
+  <id>http://haydnyau.github.io/</id>
+  <author>
+    <name><![CDATA[丘海东]]></name>
     
-      <h1 class="entry-title"><a href="/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh/">Octopress 3.0 自动化 Build Preview Deploy Push-posts .sh文件</a></h1>
-    
-    
-      <p class="meta">
-        
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
-
-
-
-<time class='entry-date' datetime='2022-01-07T06:34:42+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:34 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>preview.sh代码</p>
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress 3.0 自动化 Build Preview Deploy Push-posts .sh文件]]></title>
+    <link href="http://haydnyau.github.io/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh/"/>
+    <updated>2022-01-07T06:34:42+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh</id>
+    <content type="html"><![CDATA[<p>preview.sh代码</p>
 
 <pre><code>#!/bin/sh
 cd /home/dong/haydnyau
@@ -118,68 +50,28 @@ mv _site/_posts/ .
 
 <p>注意这个点 &ldquo;.&rdquo;
 <code>.</code> 或者 <code>./</code> 表示当前目录</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/01/07/change-if-error/">更改了文件_templates/post，以后若出错改回来</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-01-07T06:19:02+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:19 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>更改了/home/dong/haydnyau/_templates/post
+  <entry>
+    <title type="html"><![CDATA[更改了文件_templates/post，以后若出错改回来]]></title>
+    <link href="http://haydnyau.github.io/blog/2022/01/07/change-if-error/"/>
+    <updated>2022-01-07T06:19:02+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2022/01/07/change-if-error</id>
+    <content type="html"><![CDATA[<p>更改了/home/dong/haydnyau/_templates/post
 增加了：</p>
 
 <pre><code>categories: 
 </code></pre>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/01/07/octopress3-0/">创建octopress3.0简单说明</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-01-07T06:02:12+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:02 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>重装octopress 2.0 博客失败<br/>
+  <entry>
+    <title type="html"><![CDATA[创建octopress3.0简单说明]]></title>
+    <link href="http://haydnyau.github.io/blog/2022/01/07/octopress3-0/"/>
+    <updated>2022-01-07T06:02:12+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2022/01/07/octopress3-0</id>
+    <content type="html"><![CDATA[<p>重装octopress 2.0 博客失败<br/>
 很多新旧的软件，依赖，都不兼容了<br/>
 算了，世界在发展，有的旧事物必然被淘汰<br/>
 毕竟连作者都不维护了<br/>
@@ -466,35 +358,15 @@ git_branch: master                        # Git branch where static site files a
 
 <pre><code>octopress deploy
 </code></pre>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/01/02/basketball-in-the-zone/">篮球境界</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-01-02T23:27:35+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2022</span></span> <span class='time'>11:27 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今晚<br/>
+  <entry>
+    <title type="html"><![CDATA[篮球境界]]></title>
+    <link href="http://haydnyau.github.io/blog/2022/01/02/basketball-in-the-zone/"/>
+    <updated>2022-01-02T23:27:35+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2022/01/02/basketball-in-the-zone</id>
+    <content type="html"><![CDATA[<p>今晚<br/>
 并不是说命中率最高、速度最快，而是心态最好，进入境界。<br/>
 就像麦迪说的，35秒13分并不是他的最好，他的最好是进入了“in the zone”的境界。<br/>
 我今晚也一样。<br/>
@@ -516,35 +388,15 @@ git_branch: master                        # Git branch where static site files a
 心态控制体能，微汗。<br/>
 如李小龙说的：<strong>从心所欲,一心一意，表达自己</strong>。<br/>
 <strong>心态如常，张弛有道，不为所动</strong>。</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2021/12/31/my-2021/">我的2021</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2021-12-31T22:27:13+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>31</span><span class='date-suffix'>st</span>, <span class='date-year'>2021</span></span> <span class='time'>10:27 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>这一年，三件事：到京东<strong>打工</strong>，学<strong>做饭</strong>，耳朵<strong>生病</strong>。<br/>
+  <entry>
+    <title type="html"><![CDATA[我的2021]]></title>
+    <link href="http://haydnyau.github.io/blog/2021/12/31/my-2021/"/>
+    <updated>2021-12-31T22:27:13+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2021/12/31/my-2021</id>
+    <content type="html"><![CDATA[<p>这一年，三件事：到京东<strong>打工</strong>，学<strong>做饭</strong>，耳朵<strong>生病</strong>。<br/>
 <strong>打工</strong><br/>
 是做苦力，卖力气，很丢人，但，荒废了两年，终于动了。具体的，以前写过，不重复。<br/>
 <strong>做饭</strong><br/>
@@ -555,35 +407,15 @@ git_branch: master                        # Git branch where static site files a
 种种原因，祸不单行，差点聋了。<br/>
 就这三件事。<br/>
 吸取教训，放下执念，放过自己，好好生活。</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2021/12/15/jd3/">京東3</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2021-12-15T19:09:42+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2021</span></span> <span class='time'>7:09 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>day 68<br/>
+  <entry>
+    <title type="html"><![CDATA[京東3]]></title>
+    <link href="http://haydnyau.github.io/blog/2021/12/15/jd3/"/>
+    <updated>2021-12-15T19:09:42+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2021/12/15/jd3</id>
+    <content type="html"><![CDATA[<p>day 68<br/>
 今天休假<br/>
 昨天耳朵又听到低沉的发动机的轰隆隆的声音，我以为是耳鸣，现在基本可以确定，这就是附近道路晚上泥头车汽車发动机或者工廠機器運转的声音。<br/>
 在京东时也常常听到。<br/>
@@ -594,35 +426,15 @@ git_branch: master                        # Git branch where static site files a
 工作沒勁頭，好想打電話給媽，和她坦白這一切，想讓她接受我的平庸，我的失敗，我的不婚，想發泄所有的不安、恐懼、負面情緒。<br/>
 幸好，我還懂得衝動憤怒情緒不穩定時，別做決定，別做事。<br/>
 休息了一天，現在知道不是耳鳴，是感冒鼻塞或者咽鼓管堵塞或者其他的聽力系統的某一部分出了問題，而引起的狀況，感冒好了，整個聽力系統自然就沒事了。</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2021/12/07/grateful/">感恩</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2021-12-07T16:50:35+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2021</span></span> <span class='time'>4:50 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>此一時彼一時，我又回京東上班了。<br/>
+  <entry>
+    <title type="html"><![CDATA[感恩]]></title>
+    <link href="http://haydnyau.github.io/blog/2021/12/07/grateful/"/>
+    <updated>2021-12-07T16:50:35+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2021/12/07/grateful</id>
+    <content type="html"><![CDATA[<p>此一時彼一時，我又回京東上班了。<br/>
 總不能閒着不做事，沒有收入是不行的。<br/>
 不過我有保護自己，現在上日班，一天只需要工作6小時，活也不是很忙，挺好的。<br/>
 <strong>保護自己</strong>呀，一定要！</p>
@@ -639,35 +451,15 @@ git_branch: master                        # Git branch where static site files a
 我是個認真做事的人，別人看在眼裏，自然在條件允許時幫助我。<br/>
 -別人幫我，是證明了別人是好人，自己<strong>別得瑟</strong>，<strong>得意不忘形</strong>。<br/>
 一直以來，都是很多人幫助我，加油吧，中年人，<strong>別辜負了那麼多的善意</strong>。</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2021/11/26/I-AM-GOOD/">耳朵好了|饮鸩止渴|当断则断</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2021-11-26T09:22:11+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2021</span></span> <span class='time'>9:22 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>劳逸结合</h3>
+  <entry>
+    <title type="html"><![CDATA[耳朵好了|饮鸩止渴|当断则断]]></title>
+    <link href="http://haydnyau.github.io/blog/2021/11/26/I-AM-GOOD/"/>
+    <updated>2021-11-26T09:22:11+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2021/11/26/I-AM-GOOD</id>
+    <content type="html"><![CDATA[<h3>劳逸结合</h3>
 
 <p>何同学说的：你通过熬夜，不规律的生活，随意而为得来的东西，总有一天，要<strong>连本带利</strong>还回去</p>
 
@@ -680,35 +472,15 @@ git_branch: master                        # Git branch where static site files a
 <h3>饮鸩止渴</h3>
 
 <h3>当断则断</h3>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2021/11/23/JD2/">我的耳鸣，我爸的腿伤——京东打工后续</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2021-11-23T10:05:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2021</span></span> <span class='time'>10:05 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>在我小的时候，爸工作受伤，被木头狠狠地撞到腿，<strong>直到现在，一条腿都是严重的静脉曲张，惨不忍睹.</strong><br/>
+  <entry>
+    <title type="html"><![CDATA[我的耳鸣，我爸的腿伤——京东打工后续]]></title>
+    <link href="http://haydnyau.github.io/blog/2021/11/23/JD2/"/>
+    <updated>2021-11-23T10:05:00+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2021/11/23/JD2</id>
+    <content type="html"><![CDATA[<p>在我小的时候，爸工作受伤，被木头狠狠地撞到腿，<strong>直到现在，一条腿都是严重的静脉曲张，惨不忍睹.</strong><br/>
 <strong>那时他是什么年纪？不到40岁吧。</strong><br/>
 我那时还小，记不清了。那时我上小学了没？一二年级？<br/>
 <strong>记不清了，只记得有次我跟在他后面，到小学旁的山上路边挖草根，药材，熬药治疗。</strong><br/>
@@ -721,35 +493,15 @@ git_branch: master                        # Git branch where static site files a
 唉，<strong>他那个时代，注定</strong>很多人就是没有知识的，有什么办法呢？<br/>
 <strong>他能成家，养大三个儿女，供书教学，已是他的能力极限了。现在我都做不到他能做到的，我没有资格抱怨他。</strong><br/>
 <strong>人生苦短，好好把握吧，中年人。</strong></p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2021/11/21/JD/">京东打散工记</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2021-11-21T18:57:59+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2021</span></span> <span class='time'>6:57 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>2021/11/21</h3>
+  <entry>
+    <title type="html"><![CDATA[京东打散工记]]></title>
+    <link href="http://haydnyau.github.io/blog/2021/11/21/JD/"/>
+    <updated>2021-11-21T18:57:59+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2021/11/21/JD</id>
+    <content type="html"><![CDATA[<h3>2021/11/21</h3>
 
 <h3>很丢人，但我还是想写下来，没办法，这就是我，不得不承认</h3>
 
@@ -930,165 +682,182 @@ git_branch: master                        # Git branch where static site files a
 <p><strong>============================================================</strong></p>
 
 <p>迟点有心情了再写吧</p>
-</div>
+]]></content>
+  </entry>
   
+  <entry>
+    <title type="html"><![CDATA[崩溃]]></title>
+    <link href="http://haydnyau.github.io/blog/2021/06/02/crash/"/>
+    <updated>2021-06-02T00:46:18+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2021/06/02/crash</id>
+    <content type="html"><![CDATA[<p>刚刚楼下，有个年轻人崩溃了。<br/>
+我听到一阵激烈的嘈杂声，到阳台一看，一个年轻男人向远处走去，情绪激动，动作夸张，锤着踢着路经的墙面，喊了一句：你可以穷，我不可以……一个女生在后面跟着。<br/>
+其实今天中午，我也是很接近边缘的情绪，我妈跟我说买房的事，呵呵，没有钱，我能怎么回应？！这两年我没有工作，之前那点积蓄也用了大半了。<br/>
+我很想把这些问题都告诉她。可是，这样能带给我什么？又会带给她什么？<br/>
+还好，我选择​了沉默。<br/>
+遇到这些事情，别说话，别做事，自己走开，一个人安静地待一会。</p>
+]]></content>
+  </entry>
   
+  <entry>
+    <title type="html"><![CDATA[做饭想到的一些事]]></title>
+    <link href="http://haydnyau.github.io/blog/2021/04/26/zuo-fan-xiang-dao-de-yi-xie-shi/"/>
+    <updated>2021-04-26T16:05:14+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2021/04/26/zuo-fan-xiang-dao-de-yi-xie-shi</id>
+    <content type="html"><![CDATA[<p>为了省钱，最近不时自己做饭，经常在美团上买特价菜和水果。</p>
 
+<p><img src="https://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/TmEUgtj9EK6.7V8ajmQrEM.CHc2e9MhVdRlgWxDtBfhEBtkGGoWpdtU3npOSJdElcqevEiag*vYh4WXjad1XJTTSyrDKHBr6aPQBM17IFlY!/r" alt="" /><br/>
+<img src="https://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/TmEUgtj9EK6.7V8ajmQrEHjHOYKrb9BJ.rBoqp9h*vCKnrqYCVKIgBu9KvfpCQvYoHwH7C5QPhzX2RKKleWWRf09FSJ0shsrlcIrF3.RSYQ!/r" alt="" /><br/>
+<img src="https://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/TmEUgtj9EK6.7V8ajmQrELEnXoIu37NvYWfKmK3HrBiEiFxgkpB.EzGxqVXWf0SzRwlA7Z2YTnptvhE7dIQAJ3Uyh3tDU5bBk6rYG8g1PCM!/r" alt="" /><br/>
+<img src="https://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/TmEUgtj9EK6.7V8ajmQrEJ1IecCWW4GzxhvfbbdhFkz4biSA78f09rBjp1EX3OcXPyYpxxcV9dobJMrr.M9wYCsXHXMVxZ6Q4KWCE9913Os!/r" alt="" /><br/>
+<img src="https://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/TmEUgtj9EK6.7V8ajmQrEAWmgMs2QiCa3.4kedrH7Ed.VKSHNWNuFgvmrn0eA1DQk6ZtGA6sxdb9mKDyFS5z2OKinkmTN2RAOaNEW0T9pN4!/r" alt="" /><br/>
+<img src="https://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/TmEUgtj9EK6.7V8ajmQrEFgH0QYQ1myrAzlkBGnsdBWtHxhgopcP3AsoG43FXE.lIBxO2DupGMWe0lqIgw934wGbJxTYOx1pErkitQaGWSg!/r" alt="" /><br/>
+<img src="https://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/TmEUgtj9EK6.7V8ajmQrEGo04ohfDRdaBlIEerCy6UqgnCY.ED2SkLmp7Rhi1xmTEdYbAZNyFyTM4gAl7Ul9s0ZVX3zQQVOjbE8k6aaZuiA!/r" alt="" /></p>
 
-    </article>
+<p>水果：<br/>
+为了催熟，把它们装在袋子，再装入纸箱。每次开箱，丰富的混合的果香，闻着真舒服。</p>
+
+<p><img src="https://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/TmEUgtj9EK6.7V8ajmQrELlrSvAkZ3sMrac3RKumIVZ549od5A7SSJMjT0k1iWpZi.VGSj0MqIl5HTcw3U3p5Y9cYQvDlisf7N6ZbzmG1Xc!/r" alt="" /></p>
+
+<p>纸箱装水果，让我想起小时候，我和阿妈去外婆家，晚上，昏黄的灯光，在厨房，烧柴火，炒菜，我坐在旁边，外公用梯子，取下放在灶头上的木棚的纸箱，打开，是大蕉，给我。​​​​<br/>
+我家是在山上的，小学时，爸妈为了我们三姐弟方便上学，到山脚下租房子住，换租过至少五六个泥砖瓦房，也做过多种工作，木工，开杂货店，碾米，种粉蕉。在山下没有田地，家人经常带各种粮菜来给我们。爷爷带沙梨，伯母带粉蕉，堂哥带龙眼，有次妈妈带我们去了外婆家，龙眼放了几天。我有时跑回山上玩，姑姑也会装一袋子菜叫我带下去。外公也经常挑米来，两小时的山路呀。</p>
+]]></content>
+  </entry>
   
-  <div class="pagination">
-    
-      <a class="prev" href="/posts/2">&larr; Older</a>
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
+  <entry>
+    <title type="html"><![CDATA[百元之恋]]></title>
+    <link href="http://haydnyau.github.io/blog/2021/04/25/bai-yuan-zhi-lian/"/>
+    <updated>2021-04-25T15:16:37+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2021/04/25/bai-yuan-zhi-lian</id>
+    <content type="html"><![CDATA[<p>电影《百元之恋》，她并无意外地输了比赛，但是远离了一团糟糕的过往。<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/byzl.jpg" alt="百元之恋" /></p>
+]]></content>
+  </entry>
   
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh/">Octopress 3.0 自动化 Build Preview Deploy Push-posts .sh文件</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/01/07/change-if-error/">更改了文件_templates/post，以后若出错改回来</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/01/07/octopress3-0/">创建octopress3.0简单说明</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/01/02/basketball-in-the-zone/">篮球境界</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2021/12/31/my-2021/">我的2021</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2021/12/15/jd3/">京東3</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2021/12/07/grateful/">感恩</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2021/11/26/I-AM-GOOD/">耳朵好了|饮鸩止渴|当断则断</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2021/11/23/JD2/">我的耳鸣，我爸的腿伤——京东打工后续</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2021/11/21/JD/">京东打散工记</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2021/06/02/crash/">崩溃</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2021/04/26/zuo-fan-xiang-dao-de-yi-xie-shi/">做饭想到的一些事</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2021/04/25/bai-yuan-zhi-lian/">百元之恋</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2021/04/04/chou-le-de-ji-tui/">臭了的鸡腿</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2021/04/04/fang-xia/">放下 接受 和解</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/09/09/dying/">崩溃</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/08/21/famaly/">家人</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/07/12/ren-xing-de-ruo-dian/">人性的弱点</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/07/03/ios-upgrade-and-downgrade/">iOS的升级与降级</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/06/14/next-computer-partition-capacity-about-ubuntu/">Ubuntu 分区大小</a>
-      </li>
-    
-  </ul>
-</section>
-
-<section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating...</li>
-  </ul>
+  <entry>
+    <title type="html"><![CDATA[臭了的鸡腿]]></title>
+    <link href="http://haydnyau.github.io/blog/2021/04/04/chou-le-de-ji-tui/"/>
+    <updated>2021-04-04T23:14:01+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2021/04/04/chou-le-de-ji-tui</id>
+    <content type="html"><![CDATA[<p>还是这一天，我在美团上买了6块钱鸡腿，拿回来，打开包装的时候，已经闻到有点臭味了，但是没办法，硬着头皮，用热水壶水煮了，吃了。<br/>
+希望别吃坏肚子。<br/>
+希望最坏就是拉肚子就算了，别去医院。</p>
+]]></content>
+  </entry>
   
-  <a href="https://github.com/haydnyau">@haydnyau</a> on GitHub
+  <entry>
+    <title type="html"><![CDATA[放下 接受 和解]]></title>
+    <link href="http://haydnyau.github.io/blog/2021/04/04/fang-xia/"/>
+    <updated>2021-04-04T22:24:43+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2021/04/04/fang-xia</id>
+    <content type="html"><![CDATA[<p>现在是清明，昨天阿妈跟着阿玲阿康他们一起上来探阿梅，在佛山西樵山游玩一下，然后过来广州，我傍晚吃了饭后，过去阿梅那里，见个面。<br/>
+然后晚上，时间差不多到末班车了，我回来，阿梅那边地方不大，我就和阿妈来我租房睡上下床。<br/>
+到了我这，阿妈就唠叨我这里又没煮饭的东西，租房也不大（其实一房一厅已经是挺大的了，高于平均水准），然后又开始念叨我的工作不好，各方面的事，问这问那。<br/>
+我的心态又被搞崩了，一晚上没睡着，辗转反侧。阿妈睡着了，但是磨牙，还有以他的咿咿呀呀的动响，她的睡眠也不好。到了早上六点后，我才睡着一会，八点半闹钟响起，我们再起床过去阿梅那里。<br/>
+之后在闲聊中，她告诉我，之前我帮她做好了微信的实名认证，然后现在她除了在做饭店洗碗的工作外，其他的时间，还到教育城做除草的工作，4个小时，40元工钱。<br/>
+今天阿妈同阿玲阿梅去长隆野生动物世界游玩。<br/>
+我没去，因为我没钱。<br/>
+晚上阿梅他们说去酒店吃饭，叫了我，我也没去，因为我没钱。<br/>
+阿妈上来广州，我连陪她去逛逛动物园，去吃一顿饭，都没钱。<br/>
+就别想那么多了。<br/>
+放下，接受，和解。<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/fangxia/%E8%A5%BF%E6%A8%B5%E5%B1%B1.jpg" alt="西樵山" /><br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/fangxia/%E9%95%BF%E9%9A%86%E9%87%8E%E7%94%9F%E5%8A%A8%E7%89%A9%E4%B8%96%E7%95%8C.jpg" alt="长隆野生动物世界" /></p>
+]]></content>
+  </entry>
   
-  <script type="text/javascript">
-    $(document).ready(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
-
-        github.showRepos({
-            user: 'haydnyau',
-            count: 0,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
-</section>
-
-
-
-
-
+  <entry>
+    <title type="html"><![CDATA[崩溃]]></title>
+    <link href="http://haydnyau.github.io/blog/2020/09/09/dying/"/>
+    <updated>2020-09-09T00:26:39+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2020/09/09/dying</id>
+    <content type="html"><![CDATA[<p>每天深夜，崩溃，折磨，垂死，挣扎，咒骂<br/>
+也睡不好<br/>
+醒来昏昏沉沉<br/>
+深夜继续折磨<br/>
+我快死了<br/>
+很多时候我也想摆脱原生家庭的折磨<br/>
+也想有个人和我一起，听我述说我的喜好，我的感悟，我的痛苦<br/>
+可是，我能给她什么？这样的我会带给她痛苦，她又如何承受！<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/dashengguilai.jpeg" alt="孤独" /></p>
+]]></content>
+  </entry>
   
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2022 - 丘海东 -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
+  <entry>
+    <title type="html"><![CDATA[家人]]></title>
+    <link href="http://haydnyau.github.io/blog/2020/08/21/famaly/"/>
+    <updated>2020-08-21T01:03:17+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2020/08/21/famaly</id>
+    <content type="html"><![CDATA[<p>在我没钱的时候，我的家人们用最短的时间赶我走<br/>
+哈哈哈哈哈哈哈哈<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/family.jpg" alt="family" /></p>
+]]></content>
+  </entry>
   
+  <entry>
+    <title type="html"><![CDATA[人性的弱点]]></title>
+    <link href="http://haydnyau.github.io/blog/2020/07/12/ren-xing-de-ruo-dian/"/>
+    <updated>2020-07-12T01:07:29+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2020/07/12/ren-xing-de-ruo-dian</id>
+    <content type="html"><![CDATA[<h3>急功近利,自负</h3>
+
+<p>老表的一次失利遭遇<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/master/images/renxingderuodian.jpg" alt="人性的弱点" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[iOS的升级与降级]]></title>
+    <link href="http://haydnyau.github.io/blog/2020/07/03/ios-upgrade-and-downgrade/"/>
+    <updated>2020-07-03T17:35:30+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2020/07/03/ios-upgrade-and-downgrade</id>
+    <content type="html"><![CDATA[<p>升级bate版，到官网上注册，下载描述文件，常规升级</p>
+
+<p>降级：<br/>
+举例：<br/>
+iOS14降级为13.5.1：</p>
+
+<h3>1. iTunes备份数据到电脑</h3>
+
+<ul>
+<li>建议再备份到iCloud</li>
+<li>微信聊天记录备份到另一手机</li>
+</ul>
 
 
+<h3>2. 爱思助手下载固件，选择：常规快速刷机</h3>
+
+<ul>
+<li>注意：降级不能选择：保留用户资料</li>
+<li>第一次电信宽带，刷机在60%失败</li>
+<li>第二次翻墙（全部代理），同样失败</li>
+<li>第三次手机网络（联通），USB分享，成功</li>
+<li>只用了3M流量</li>
+<li>每次刷机都是10分钟左右，挺快的</li>
+</ul>
 
 
+<h3>3. 找到备份文件，Info.plist，更改固件版本</h3>
+
+<ul>
+<li>Product Version：14.0改为13.5.1</li>
+<li>Build Version：18A5301v改为17F80</li>
+<li>因为高版本的备份无法还原到低版本的系统</li>
+</ul>
 
 
-
-
-
-
-
-</body>
-</html>
+<h3>4. 开机后从电脑恢复数据</h3>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu 分区大小]]></title>
+    <link href="http://haydnyau.github.io/blog/2020/06/14/next-computer-partition-capacity-about-ubuntu/"/>
+    <updated>2020-06-14T10:17:52+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2020/06/14/next-computer-partition-capacity-about-ubuntu</id>
+    <content type="html"><![CDATA[<p>Ubuntu 分区大小不用太多，现在只用了12G而已，估计下次给它30G就ok了<br/>
+<img src="http://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/jmmX4OKaz9ls*nNN2EORpdUZxewuHv2zzf0xLU5fQbxzOua1RSynmCnzTIHZiqC*6XkA94FYqyCRSoPTFb63m6qEs3HFCGw0gTgyMroP1qA!/r" alt="分区容量" /></p>
+]]></content>
+  </entry>
+  
+</feed>

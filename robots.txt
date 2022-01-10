@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://haydnyau.github.io/sitemap.xml 
