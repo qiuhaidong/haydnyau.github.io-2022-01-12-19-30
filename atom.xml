@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="http://haydnyau.github.io/atom.xml" rel="self"/>
   <link href="http://haydnyau.github.io/"/>
-  <updated>2022-01-10T22:09:18+08:00</updated>
+  <updated>2022-01-10T23:34:27+08:00</updated>
   <id>http://haydnyau.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,103 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[侧边栏增加分类 Category]]></title>
+    <link href="http://haydnyau.github.io/blog/2022/01/10/add-category/"/>
+    <updated>2022-01-10T23:00:59+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2022/01/10/add-category</id>
+    <content type="html"><![CDATA[<h3>三步</h3>
+
+<h2>Step 1</h2>
+
+<h3>添加 <code>category_list</code> 插件</h3>
+
+<p>在 <code>octopress\plugins\</code> 文件夹里面，新建一个文件，名为：<code>category_list_tag.rb</code>。并将下面的代码粘贴到里面。</p>
+
+<pre><code>module Jekyll
+  class CategoryListTag &lt; Liquid::Tag
+    def render(context)
+      html = ""
+      categories = context.registers[:site].categories.keys
+      categories.sort.each do |category|
+        posts_in_category = context.registers[:site].categories[category].size
+       category_dir = context.registers[:site].config['category_dir']
+        category_url = File.join(category_dir, category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase)
+        html &lt;&lt; "&lt;li class='category'&gt;&lt;a href='http://haydnyau.github.io/#{category_url}/'&gt;#{category} (#{posts_in_category})&lt;/a&gt;&lt;/li&gt;\n"
+      end
+      html
+    end
+  end
+end
+
+Liquid::Template.register_tag('category_list', Jekyll::CategoryListTag)
+</code></pre>
+
+<p>这个插件会向<code>liquid</code>注册一个名为<code>category_list</code>的<code>tag</code>，该<code>tag</code>就是以<code>li</code>的形式将站点所有的<code>category</code>组织起来。如果要将<code>category</code>加入到侧边导航栏，需要增加一个<code>aside</code>。</p>
+
+<h2>Step 2</h2>
+
+<h3>增加 <code>aside</code></h3>
+
+<p>在 <code>octopress\source\_includes\asides\</code> 文件夹里面，新建一个文件，名为：<code>category_list.html</code> 。并粘贴下面的代码：</p>
+
+<p><strong>注意</strong>： 去掉 <code>%</code> 前面的2个 <code>\</code><br/>
+这里如果不加上<code>\</code>，markdown格式会显示<code>category_list</code>的内容。我是为了正确显示代码才加上的</p>
+
+<pre><code>&lt;section&gt;
+  &lt;h1&gt;Categories&lt;/h1&gt;
+  &lt;ul id="categories"&gt;
+    {\% category_list \%}
+  &lt;/ul&gt;
+&lt;/section&gt;
+</code></pre>
+
+<h2>Step 3</h2>
+
+<h3><code>_config.yml</code> 文件 ，修改 <code>default_asides</code></h3>
+
+<p>打开 <code>octopress\_config.yml</code> 文件，修改里面的 <code>default_asides</code> 这一行，将 <code>asides/category_list.html</code> 添加进去。</p>
+
+<pre><code>default_asides: [asides/category_list.html, ......]
+</code></pre>
+
+<p>这里可以修改侧边栏的顺序</p>
+
+<h2>ok</h2>
+
+<p><a href="http://www.aobosir.com/blog/2016/10/12/octopress-build-static-blog-site-add-categories-list-for-site-sidebar/">原博</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[没有正确路径或权限上传，push]]></title>
+    <link href="http://haydnyau.github.io/blog/2022/01/10/can-not-push/"/>
+    <updated>2022-01-10T22:42:18+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2022/01/10/can-not-push</id>
+    <content type="html"><![CDATA[<p>代码如下：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ git push origin source
+
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights and the repository exists.
+</code></pre>
+
+<p>打开文件~/octopress/.git/config，查看</p>
+
+<pre><code>[remote "origin"]
+    url = git@github.com:haydnyau/haydnyau.github.io.git
+</code></pre>
+
+<p>我是改了几次，com.git和io.git搞错了</p>
+
+<p><a href="https://blog.csdn.net/weixin_40886892/article/details/80725071">和我同样问题的网友</a></p>
+
+<p><a href="https://blog.csdn.net/meng_lemon/article/details/88963157">另一个网友的类似问题</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress 3.0 自动化 Build Preview Deploy Push-posts .sh文件]]></title>
@@ -803,60 +900,6 @@ git_branch: master                        # Git branch where static site files a
 
 <p>老表的一次失利遭遇<br/>
 <img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/master/images/renxingderuodian.jpg" alt="人性的弱点" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[iOS的升级与降级]]></title>
-    <link href="http://haydnyau.github.io/blog/2020/07/03/ios-upgrade-and-downgrade/"/>
-    <updated>2020-07-03T17:35:30+08:00</updated>
-    <id>http://haydnyau.github.io/blog/2020/07/03/ios-upgrade-and-downgrade</id>
-    <content type="html"><![CDATA[<p>升级bate版，到官网上注册，下载描述文件，常规升级</p>
-
-<p>降级：<br/>
-举例：<br/>
-iOS14降级为13.5.1：</p>
-
-<h3>1. iTunes备份数据到电脑</h3>
-
-<ul>
-<li>建议再备份到iCloud</li>
-<li>微信聊天记录备份到另一手机</li>
-</ul>
-
-
-<h3>2. 爱思助手下载固件，选择：常规快速刷机</h3>
-
-<ul>
-<li>注意：降级不能选择：保留用户资料</li>
-<li>第一次电信宽带，刷机在60%失败</li>
-<li>第二次翻墙（全部代理），同样失败</li>
-<li>第三次手机网络（联通），USB分享，成功</li>
-<li>只用了3M流量</li>
-<li>每次刷机都是10分钟左右，挺快的</li>
-</ul>
-
-
-<h3>3. 找到备份文件，Info.plist，更改固件版本</h3>
-
-<ul>
-<li>Product Version：14.0改为13.5.1</li>
-<li>Build Version：18A5301v改为17F80</li>
-<li>因为高版本的备份无法还原到低版本的系统</li>
-</ul>
-
-
-<h3>4. 开机后从电脑恢复数据</h3>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ubuntu 分区大小]]></title>
-    <link href="http://haydnyau.github.io/blog/2020/06/14/next-computer-partition-capacity-about-ubuntu/"/>
-    <updated>2020-06-14T10:17:52+08:00</updated>
-    <id>http://haydnyau.github.io/blog/2020/06/14/next-computer-partition-capacity-about-ubuntu</id>
-    <content type="html"><![CDATA[<p>Ubuntu 分区大小不用太多，现在只用了12G而已，估计下次给它30G就ok了<br/>
-<img src="http://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/jmmX4OKaz9ls*nNN2EORpdUZxewuHv2zzf0xLU5fQbxzOua1RSynmCnzTIHZiqC*6XkA94FYqyCRSoPTFb63m6qEs3HFCGw0gTgyMroP1qA!/r" alt="分区容量" /></p>
 ]]></content>
   </entry>
   

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://haydnyau.github.io/blog/2022/01/10/add-category/</loc>
+<lastmod>2022-01-10T23:00:59+08:00</lastmod>
+</url>
+<url>
+<loc>http://haydnyau.github.io/blog/2022/01/10/can-not-push/</loc>
+<lastmod>2022-01-10T22:42:18+08:00</lastmod>
+</url>
+<url>
 <loc>http://haydnyau.github.io/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh/</loc>
 <lastmod>2022-01-07T06:34:42+08:00</lastmod>
 </url>
@@ -665,5 +673,8 @@
 </url>
 <url>
 <loc>http://haydnyau.github.io/blog/categories/onlyforyou/</loc>
+</url>
+<url>
+<loc>http://haydnyau.github.io/blog/categories/tech-octopress/</loc>
 </url>
 </urlset>

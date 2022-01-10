@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Tech-octopress | 丘海东]]></title>
+  <link href="http://haydnyau.github.io/blog/categories/tech-octopress/atom.xml" rel="self"/>
+  <link href="http://haydnyau.github.io/"/>
+  <updated>2022-01-10T23:34:27+08:00</updated>
+  <id>http://haydnyau.github.io/</id>
+  <author>
+    <name><![CDATA[丘海东]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[侧边栏增加分类 Category]]></title>
+    <link href="http://haydnyau.github.io/blog/2022/01/10/add-category/"/>
+    <updated>2022-01-10T23:00:59+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2022/01/10/add-category</id>
+    <content type="html"><![CDATA[<h3>三步</h3>
+
+<h2>Step 1</h2>
+
+<h3>添加 <code>category_list</code> 插件</h3>
+
+<p>在 <code>octopress\plugins\</code> 文件夹里面，新建一个文件，名为：<code>category_list_tag.rb</code>。并将下面的代码粘贴到里面。</p>
+
+<pre><code>module Jekyll
+  class CategoryListTag &lt; Liquid::Tag
+    def render(context)
+      html = ""
+      categories = context.registers[:site].categories.keys
+      categories.sort.each do |category|
+        posts_in_category = context.registers[:site].categories[category].size
+       category_dir = context.registers[:site].config['category_dir']
+        category_url = File.join(category_dir, category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase)
+        html &lt;&lt; "&lt;li class='category'&gt;&lt;a href='http://haydnyau.github.io/#{category_url}/'&gt;#{category} (#{posts_in_category})&lt;/a&gt;&lt;/li&gt;\n"
+      end
+      html
+    end
+  end
+end
+
+Liquid::Template.register_tag('category_list', Jekyll::CategoryListTag)
+</code></pre>
+
+<p>这个插件会向<code>liquid</code>注册一个名为<code>category_list</code>的<code>tag</code>，该<code>tag</code>就是以<code>li</code>的形式将站点所有的<code>category</code>组织起来。如果要将<code>category</code>加入到侧边导航栏，需要增加一个<code>aside</code>。</p>
+
+<h2>Step 2</h2>
+
+<h3>增加 <code>aside</code></h3>
+
+<p>在 <code>octopress\source\_includes\asides\</code> 文件夹里面，新建一个文件，名为：<code>category_list.html</code> 。并粘贴下面的代码：</p>
+
+<p><strong>注意</strong>： 去掉 <code>%</code> 前面的2个 <code>\</code><br/>
+这里如果不加上<code>\</code>，markdown格式会显示<code>category_list</code>的内容。我是为了正确显示代码才加上的</p>
+
+<pre><code>&lt;section&gt;
+  &lt;h1&gt;Categories&lt;/h1&gt;
+  &lt;ul id="categories"&gt;
+    {\% category_list \%}
+  &lt;/ul&gt;
+&lt;/section&gt;
+</code></pre>
+
+<h2>Step 3</h2>
+
+<h3><code>_config.yml</code> 文件 ，修改 <code>default_asides</code></h3>
+
+<p>打开 <code>octopress\_config.yml</code> 文件，修改里面的 <code>default_asides</code> 这一行，将 <code>asides/category_list.html</code> 添加进去。</p>
+
+<pre><code>default_asides: [asides/category_list.html, ......]
+</code></pre>
+
+<p>这里可以修改侧边栏的顺序</p>
+
+<h2>ok</h2>
+
+<p><a href="http://www.aobosir.com/blog/2016/10/12/octopress-build-static-blog-site-add-categories-list-for-site-sidebar/">原博</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[没有正确路径或权限上传，push]]></title>
+    <link href="http://haydnyau.github.io/blog/2022/01/10/can-not-push/"/>
+    <updated>2022-01-10T22:42:18+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2022/01/10/can-not-push</id>
+    <content type="html"><![CDATA[<p>代码如下：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ git push origin source
+
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights and the repository exists.
+</code></pre>
+
+<p>打开文件~/octopress/.git/config，查看</p>
+
+<pre><code>[remote "origin"]
+    url = git@github.com:haydnyau/haydnyau.github.io.git
+</code></pre>
+
+<p>我是改了几次，com.git和io.git搞错了</p>
+
+<p><a href="https://blog.csdn.net/weixin_40886892/article/details/80725071">和我同样问题的网友</a></p>
+
+<p><a href="https://blog.csdn.net/meng_lemon/article/details/88963157">另一个网友的类似问题</a></p>
+]]></content>
+  </entry>
+  
+</feed>
