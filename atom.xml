@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="http://haydnyau.github.io/atom.xml" rel="self"/>
   <link href="http://haydnyau.github.io/"/>
-  <updated>2022-01-11T02:55:38+08:00</updated>
+  <updated>2022-01-11T04:40:54+08:00</updated>
   <id>http://haydnyau.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[test18.04]]></title>
+    <link href="http://haydnyau.github.io/blog/2022/01/11/test18-dot-04/"/>
+    <updated>2022-01-11T04:38:50+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2022/01/11/test18-dot-04</id>
+    <content type="html"><![CDATA[<p>as the title</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ubuntu16.04 Install Octopress 2.0]]></title>
@@ -1201,17 +1210,6 @@ git_branch: master                        # Git branch where static site files a
 也想有个人和我一起，听我述说我的喜好，我的感悟，我的痛苦<br/>
 可是，我能给她什么？这样的我会带给她痛苦，她又如何承受！<br/>
 <img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/dashengguilai.jpeg" alt="孤独" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[家人]]></title>
-    <link href="http://haydnyau.github.io/blog/2020/08/21/famaly/"/>
-    <updated>2020-08-21T01:03:17+08:00</updated>
-    <id>http://haydnyau.github.io/blog/2020/08/21/famaly</id>
-    <content type="html"><![CDATA[<p>在我没钱的时候，我的家人们用最短的时间赶我走<br/>
-哈哈哈哈哈哈哈哈<br/>
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/family.jpg" alt="family" /></p>
 ]]></content>
   </entry>
   
