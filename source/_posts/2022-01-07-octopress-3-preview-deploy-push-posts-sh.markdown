@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Octopress 3.0 脚本运行 build  preview  deploy  push-posts .sh文件"
-date: 2022-01-07T06:34:42+08:00
+date: 2022-01-07 06:34:42 +08:00
+comments: true
 categories: tech
 ---
 

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "创建octopress3.0简单说明"
-date: 2022-01-07T06:02:12+08:00
+date: 2022-01-07 06:02:12 +08:00
+comments: true
 categories: tech
 ---
 重装octopress 2.0 博客失败  

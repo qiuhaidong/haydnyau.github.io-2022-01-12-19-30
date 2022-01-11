@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "更改了文件_templates/post，以后若出错改回来"
-date: 2022-01-07T06:19:02+08:00
+date: 2022-01-07 06:19:02 +08:00
+comments: true
 categories: tech-octopress
 ---
 
