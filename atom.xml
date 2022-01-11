@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="http://haydnyau.github.io/atom.xml" rel="self"/>
   <link href="http://haydnyau.github.io/"/>
-  <updated>2022-01-11T20:37:51+08:00</updated>
+  <updated>2022-01-12T02:39:23+08:00</updated>
   <id>http://haydnyau.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,68 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[好记性不如烂笔头]]></title>
+    <link href="http://haydnyau.github.io/blog/2022/01/12/write-them-all/"/>
+    <updated>2022-01-12T00:37:26+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2022/01/12/write-them-all</id>
+    <content type="html"><![CDATA[<p>很多以前做过的事，细节步骤都不记得了，多写字吧，详细地记录下来，以后也有个回忆。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress 自动打开文件 插入本地图片 程序]]></title>
+    <link href="http://haydnyau.github.io/blog/2022/01/11/octopress-new-post-auto-open/"/>
+    <updated>2022-01-11T22:42:33+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2022/01/11/octopress-new-post-auto-open</id>
+    <content type="html"><![CDATA[<h3>添加功能：自动打开文件编辑</h3>
+
+<p><code>rake new_post["file name"]</code> 后自动打开博客文件<br/>
+编辑<code>Rakefile</code>文件，上面位置，添加定义：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>editor = "gedit"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后在<code>new_post</code>命令后面添加：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>if #{editor}
+</span><span class='line'>  system "#{editor} #{filename}"
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>插入本地图片</h3>
+
+<p>将图片放到<code>octopress/source/images/</code>下，然后在Markdown文件中可直接引用，用法：</p>
+
+<pre><code>格式显示有问题，请看原文，或下面的图片&lt;img src="http://haydnyau.github.io/images/麦迪科比.jpg"&gt;
+</code></pre>
+
+<p><img src="http://haydnyau.github.io/images/自动打开-本地图片-程序.png"><br/>
+<img src="http://haydnyau.github.io/images/麦迪科比.jpg"></p>
+
+<h4>前后行3个```显示代码，且有显示行数</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>c++
+</span><span class='line'>int main()
+</span><span class='line'>{
+</span><span class='line'>  cout&lt;&lt;"hello world"&lt;&lt;endl;
+</span><span class='line'>};
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress 2.0 Test on Ubuntu 20.04]]></title>
@@ -1324,38 +1386,6 @@ git_branch: master                        # Git branch where static site files a
     <id>http://haydnyau.github.io/blog/2021/04/25/bai-yuan-zhi-lian</id>
     <content type="html"><![CDATA[<p>电影《百元之恋》，她并无意外地输了比赛，但是远离了一团糟糕的过往。<br/>
 <img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/byzl.jpg" alt="百元之恋" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[臭了的鸡腿]]></title>
-    <link href="http://haydnyau.github.io/blog/2021/04/04/chou-le-de-ji-tui/"/>
-    <updated>2021-04-04T23:14:01+08:00</updated>
-    <id>http://haydnyau.github.io/blog/2021/04/04/chou-le-de-ji-tui</id>
-    <content type="html"><![CDATA[<p>还是这一天，我在美团上买了6块钱鸡腿，拿回来，打开包装的时候，已经闻到有点臭味了，但是没办法，硬着头皮，用热水壶水煮了，吃了。<br/>
-希望别吃坏肚子。<br/>
-希望最坏就是拉肚子就算了，别去医院。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[放下 接受 和解]]></title>
-    <link href="http://haydnyau.github.io/blog/2021/04/04/fang-xia/"/>
-    <updated>2021-04-04T22:24:43+08:00</updated>
-    <id>http://haydnyau.github.io/blog/2021/04/04/fang-xia</id>
-    <content type="html"><![CDATA[<p>现在是清明，昨天阿妈跟着阿玲阿康他们一起上来探阿梅，在佛山西樵山游玩一下，然后过来广州，我傍晚吃了饭后，过去阿梅那里，见个面。<br/>
-然后晚上，时间差不多到末班车了，我回来，阿梅那边地方不大，我就和阿妈来我租房睡上下床。<br/>
-到了我这，阿妈就唠叨我这里又没煮饭的东西，租房也不大（其实一房一厅已经是挺大的了，高于平均水准），然后又开始念叨我的工作不好，各方面的事，问这问那。<br/>
-我的心态又被搞崩了，一晚上没睡着，辗转反侧。阿妈睡着了，但是磨牙，还有以他的咿咿呀呀的动响，她的睡眠也不好。到了早上六点后，我才睡着一会，八点半闹钟响起，我们再起床过去阿梅那里。<br/>
-之后在闲聊中，她告诉我，之前我帮她做好了微信的实名认证，然后现在她除了在做饭店洗碗的工作外，其他的时间，还到教育城做除草的工作，4个小时，40元工钱。<br/>
-今天阿妈同阿玲阿梅去长隆野生动物世界游玩。<br/>
-我没去，因为我没钱。<br/>
-晚上阿梅他们说去酒店吃饭，叫了我，我也没去，因为我没钱。<br/>
-阿妈上来广州，我连陪她去逛逛动物园，去吃一顿饭，都没钱。<br/>
-就别想那么多了。<br/>
-放下，接受，和解。<br/>
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/fangxia/%E8%A5%BF%E6%A8%B5%E5%B1%B1.jpg" alt="西樵山" /><br/>
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/fangxia/%E9%95%BF%E9%9A%86%E9%87%8E%E7%94%9F%E5%8A%A8%E7%89%A9%E4%B8%96%E7%95%8C.jpg" alt="长隆野生动物世界" /></p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech-octopress | 丘海东]]></title>
   <link href="http://haydnyau.github.io/blog/categories/tech-octopress/atom.xml" rel="self"/>
   <link href="http://haydnyau.github.io/"/>
-  <updated>2022-01-11T20:37:51+08:00</updated>
+  <updated>2022-01-12T02:39:23+08:00</updated>
   <id>http://haydnyau.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,46 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress 自动打开文件 插入本地图片 程序]]></title>
+    <link href="http://haydnyau.github.io/blog/2022/01/11/octopress-new-post-auto-open/"/>
+    <updated>2022-01-11T22:42:33+08:00</updated>
+    <id>http://haydnyau.github.io/blog/2022/01/11/octopress-new-post-auto-open</id>
+    <content type="html"><![CDATA[<h3>添加功能：自动打开文件编辑</h3>
+
+<p><code>rake new_post["file name"]</code> 后自动打开博客文件<br/>
+编辑<code>Rakefile</code>文件，上面位置，添加定义：<br/>
+<code>
+    editor = "gedit"
+</code>
+然后在<code>new_post</code>命令后面添加：<br/>
+<code>
+if #{editor}
+  system "#{editor} #{filename}"
+end
+</code></p>
+
+<h3>插入本地图片</h3>
+
+<p>将图片放到<code>octopress/source/images/</code>下，然后在Markdown文件中可直接引用，用法：</p>
+
+<pre><code>格式显示有问题，请看原文，或下面的图片<img src="/images/麦迪科比.jpg">
+</code></pre>
+
+<p><img src="/images/自动打开-本地图片-程序.png"><br/>
+<img src="/images/麦迪科比.jpg"></p>
+
+<h4>前后行3个```显示代码，且有显示行数</h4>
+
+<pre><code>c++
+int main()
+{
+    cout&lt;&lt;"hello world"&lt;&lt;endl;
+};
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress 2.0 Test on Ubuntu 20.04]]></title>
@@ -531,24 +571,6 @@ Please make sure you have the correct access rights and the repository exists.
 <p><a href="https://blog.csdn.net/weixin_40886892/article/details/80725071">和我同样问题的网友</a></p>
 
 <p><a href="https://blog.csdn.net/meng_lemon/article/details/88963157">另一个网友的类似问题</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[更改了文件_templates/post，以后若出错改回来]]></title>
-    <link href="http://haydnyau.github.io/blog/2022/01/07/change-templates--post-if-error/"/>
-    <updated>2022-01-07T06:19:02+08:00</updated>
-    <id>http://haydnyau.github.io/blog/2022/01/07/change-templates--post-if-error</id>
-    <content type="html"><![CDATA[<p>更改了/home/dong/haydnyau/_templates/post
-增加了：</p>
-
-<pre><code>categories: 
-</code></pre>
-
-<h3>ps: {}里面有代码:</h3>
-
-<p>categories: <br/>
-因为格式问题没有显示，参见原文件</p>
 ]]></content>
   </entry>
   
