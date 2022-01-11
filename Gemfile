@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 group :development do
-#  gem 'rake', '~> 10.0'
+#  gem 'rake', '~> 10.0' dg：2.0 原版是这行，在ubuntu20.04.3中，我注释掉了
   gem 'rake', '~> 13.0'
   gem 'jekyll', '~> 2.0'
   gem 'octopress-hooks', '~> 2.2'
