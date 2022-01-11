@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "test20.04"
+title: "octopress 2.0 test on ubuntu 20.04"
 date: 2022-01-11 07:52:12 +0800
 comments: true
-categories: 
+categories: tech-octopress
 ---
 
 	install 2.3.1  
@@ -22,8 +22,10 @@ categories:
 	rvm use 2.7.0
  	Required ruby-2.7.0 is not installed.
  	To install do: 'rvm install "ruby-2.7.0"'  
- 	
-.  
+ 
+ 
+# 记得是用2.7.0 
+ .  
 
 	dong@Ubuntu:~/octopress$ rvm install "ruby-2.7.0"  
 	

@@ -3,9 +3,9 @@ layout: post
 title: "ubuntu 安装后wifi无法使用"
 date: 2022-01-11 04:38:50 +0800
 comments: true
-categories: test
+categories: tech
 ---
-
+### 原文件是ubuntu16.04安装了octopress2.0，升级到ubuntu18.04，新建此文件，可以运行，没报错，然后改成这个内容  
 首先利用`rfkill`命令查看目前无线传输设备的状态，`rfkill`是一个命令行工具，可使用它查询和更改系统中启用了RFKill的设备。  
 
 rfkill的常用方法为:  

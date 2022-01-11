@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ubuntu16.04 install octopress 2.0"
+title: "ubuntu 16.04 install octopress 2.0"
 date: 2022-01-11 00:17:21 +0800
 comments: true
 categories: tech-octopress
