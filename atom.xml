@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="http://haydnyau.github.io/atom.xml" rel="self"/>
   <link href="http://haydnyau.github.io/"/>
-  <updated>2022-01-11T08:05:18+08:00</updated>
+  <updated>2022-01-11T20:37:51+08:00</updated>
   <id>http://haydnyau.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -14,10 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[test20.04]]></title>
-    <link href="http://haydnyau.github.io/blog/2022/01/11/test20-dot-04/"/>
+    <title type="html"><![CDATA[Octopress 2.0 Test on Ubuntu 20.04]]></title>
+    <link href="http://haydnyau.github.io/blog/2022/01/11/octopress-2.0-test-on-ubuntu-20.04/"/>
     <updated>2022-01-11T07:52:12+08:00</updated>
-    <id>http://haydnyau.github.io/blog/2022/01/11/test20-dot-04</id>
+    <id>http://haydnyau.github.io/blog/2022/01/11/octopress-2.0-test-on-ubuntu-20.04</id>
     <content type="html"><![CDATA[<pre><code>install 2.3.1  
 </code></pre>
 
@@ -39,7 +39,9 @@ Required ruby-2.7.0 is not installed.
 To install do: 'rvm install "ruby-2.7.0"'  
 </code></pre>
 
-<p>.</p>
+<h1>记得是用2.7.0</h1>
+
+<p> .</p>
 
 <pre><code>dong@Ubuntu:~/octopress$ rvm install "ruby-2.7.0"  
 </code></pre>
@@ -118,10 +120,12 @@ Gem::LoadError: You have already activated rake 13.0.1, but your Gemfile require
   
   <entry>
     <title type="html"><![CDATA[Ubuntu 安装后wifi无法使用]]></title>
-    <link href="http://haydnyau.github.io/blog/2022/01/11/test18-dot-04/"/>
+    <link href="http://haydnyau.github.io/blog/2022/01/11/ubuntu-wifi-do-not-work/"/>
     <updated>2022-01-11T04:38:50+08:00</updated>
-    <id>http://haydnyau.github.io/blog/2022/01/11/test18-dot-04</id>
-    <content type="html"><![CDATA[<p>首先利用<code>rfkill</code>命令查看目前无线传输设备的状态，<code>rfkill</code>是一个命令行工具，可使用它查询和更改系统中启用了RFKill的设备。</p>
+    <id>http://haydnyau.github.io/blog/2022/01/11/ubuntu-wifi-do-not-work</id>
+    <content type="html"><![CDATA[<h3>原文件是ubuntu16.04安装了octopress2.0，升级到ubuntu18.04，新建此文件，可以运行，没报错，然后改成这个内容</h3>
+
+<p>首先利用<code>rfkill</code>命令查看目前无线传输设备的状态，<code>rfkill</code>是一个命令行工具，可使用它查询和更改系统中启用了RFKill的设备。</p>
 
 <p>rfkill的常用方法为:</p>
 
@@ -182,10 +186,10 @@ Hard blocked: no
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[ubuntu16.04 Install Octopress 2.0]]></title>
-    <link href="http://haydnyau.github.io/blog/2022/01/11/ubuntu16-dot-04-install-octopress-2-dot-0/"/>
+    <title type="html"><![CDATA[Ubuntu 16.04 Install Octopress 2.0]]></title>
+    <link href="http://haydnyau.github.io/blog/2022/01/11/ubuntu-16.04-install-octopress-2.0/"/>
     <updated>2022-01-11T00:17:21+08:00</updated>
-    <id>http://haydnyau.github.io/blog/2022/01/11/ubuntu16-dot-04-install-octopress-2-dot-0</id>
+    <id>http://haydnyau.github.io/blog/2022/01/11/ubuntu-16.04-install-octopress-2.0</id>
     <content type="html"><![CDATA[<p>ubuntu20.04安装了几次2.0都失败<br/>
 ubuntu12.04已经无法安装系统本身的更新了，更别说安装其他软件<br/>
 强迫症发作，于是有了这次：</p>
