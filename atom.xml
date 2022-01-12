@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="http://haydnyau.github.io/atom.xml" rel="self"/>
   <link href="http://haydnyau.github.io/"/>
-  <updated>2022-01-12T19:15:38+08:00</updated>
+  <updated>2022-01-12T19:22:12+08:00</updated>
   <id>http://haydnyau.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -27,25 +27,29 @@
 <p>由于参与的一个项目在用2.3.1版本的ruby，所以想用rvm来安装ruby2.3.1。运行报错，需要libssl1.0-dev.<br/>
 解决办法：</p>
 
-<ol>
+<ul>
 <li>运行</li>
-</ol>
+</ul>
 
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>sudo gedit /etc/apt/sources.list</span></code></pre></td></tr></table></div></figure>
 
 
-<p>在<code>/etc/apt/sources.list</code> 中添加下载源 <code>deb http://security.ubuntu.com/ubuntu bionic-security main</code>。保存退出。<br/>
-2. 更新</p>
+<p>在<code>/etc/apt/sources.list</code> 中添加下载源 <code>deb http://security.ubuntu.com/ubuntu bionic-security main</code>。保存退出。</p>
+
+<ul>
+<li>更新</li>
+</ul>
+
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt update</span></code></pre></td></tr></table></div></figure>
 
 
-<ol>
-<li></li>
-</ol>
+<ul>
+<li>安装</li>
+</ul>
 
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>

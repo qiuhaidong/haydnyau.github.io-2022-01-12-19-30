@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | 丘海东]]></title>
   <link href="http://haydnyau.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="http://haydnyau.github.io/"/>
-  <updated>2022-01-12T19:15:38+08:00</updated>
+  <updated>2022-01-12T19:22:12+08:00</updated>
   <id>http://haydnyau.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -27,20 +27,31 @@
 <p>由于参与的一个项目在用2.3.1版本的ruby，所以想用rvm来安装ruby2.3.1。运行报错，需要libssl1.0-dev.<br/>
 解决办法：</p>
 
-<ol>
-<li>运行
-<code>
-sudo gedit /etc/apt/sources.list
-</code>
-在<code>/etc/apt/sources.list</code> 中添加下载源 <code>deb http://security.ubuntu.com/ubuntu bionic-security main</code>。保存退出。</li>
-<li><p>更新
-<code>
-sudo apt update
-</code></p></li>
-<li><pre><code>apt-cache policy libssl1.0-dev  #（这步我没有做，先不做）
-</code></pre></li>
-</ol>
+<ul>
+<li>运行</li>
+</ul>
 
+
+<pre><code>sudo gedit /etc/apt/sources.list
+</code></pre>
+
+<p>在<code>/etc/apt/sources.list</code> 中添加下载源 <code>deb http://security.ubuntu.com/ubuntu bionic-security main</code>。保存退出。</p>
+
+<ul>
+<li>更新</li>
+</ul>
+
+
+<pre><code>sudo apt update
+</code></pre>
+
+<ul>
+<li>安装</li>
+</ul>
+
+
+<pre><code>apt-cache policy libssl1.0-dev  #（这步我没有做，先不做）
+</code></pre>
 
 <p>然后再安装<code>rvm install 2.2.6</code></p>
 
