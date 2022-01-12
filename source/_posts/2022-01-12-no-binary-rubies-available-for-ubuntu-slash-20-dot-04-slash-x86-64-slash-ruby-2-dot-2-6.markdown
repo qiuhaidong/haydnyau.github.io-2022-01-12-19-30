@@ -17,17 +17,22 @@ rvm安装低版本ruby报错Error running ‘requirements_debian_libs_install li
 由于参与的一个项目在用2.3.1版本的ruby，所以想用rvm来安装ruby2.3.1。运行报错，需要libssl1.0-dev.  
 解决办法：  
 
-1. 运行
+- 运行
+
 ```
 sudo gedit /etc/apt/sources.list
 ```
+
 在`/etc/apt/sources.list` 中添加下载源 `deb http://security.ubuntu.com/ubuntu bionic-security main`。保存退出。  
-2. 更新
+
+- 更新
+
 ```
 sudo apt update
 ```
 
-3. 
+- 安装 
+
 ```
 apt-cache policy libssl1.0-dev  #（这步我没有做，先不做）
 ```
