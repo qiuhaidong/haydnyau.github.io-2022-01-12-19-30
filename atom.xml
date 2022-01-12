@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="http://haydnyau.github.io/atom.xml" rel="self"/>
   <link href="http://haydnyau.github.io/"/>
-  <updated>2022-01-12T02:39:23+08:00</updated>
+  <updated>2022-01-12T09:45:21+08:00</updated>
   <id>http://haydnyau.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -726,7 +726,9 @@ mv _site/_posts/ .
     <link href="http://haydnyau.github.io/blog/2022/01/07/octopress3-0/"/>
     <updated>2022-01-07T06:02:12+08:00</updated>
     <id>http://haydnyau.github.io/blog/2022/01/07/octopress3-0</id>
-    <content type="html"><![CDATA[<p>重装octopress 2.0 博客失败<br/>
+    <content type="html"><![CDATA[<h3>注意，先到jekyll官网，用它的方法安装好本地博客，再看几个octopress的教程，官方github的，安装octopress，用它来上传blog，结合下面的前面几步，git，rvm，ruby，bundler，bundle install？</h3>
+
+<p>重装octopress 2.0 博客失败<br/>
 很多新旧的软件，依赖，都不兼容了<br/>
 算了，世界在发展，有的旧事物必然被淘汰<br/>
 毕竟连作者都不维护了<br/>
