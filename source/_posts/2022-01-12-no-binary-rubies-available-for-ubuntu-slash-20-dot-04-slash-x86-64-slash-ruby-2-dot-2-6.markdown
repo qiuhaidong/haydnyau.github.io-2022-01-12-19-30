@@ -7,7 +7,6 @@ categories: tech
 ---
 
 
-
 [No binary rubies available for: ubuntu/20.04/x86_64/ruby-2.2.6;;Error running requirements_debian_libs_install libssl1.0-dev](https://blog.csdn.net/qq_41988167/article/details/106202868)  
 
 原博内容：  
