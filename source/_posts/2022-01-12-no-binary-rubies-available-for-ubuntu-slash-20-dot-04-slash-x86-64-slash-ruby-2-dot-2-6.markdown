@@ -37,8 +37,8 @@ sudo apt update
 apt-cache policy libssl1.0-dev  #（这步我没有做，先不做）
 ```
 
-然后再安装`rvm install 2.2.6`
+然后再安装`rvm install 2.2.6`  
 
-————————————————
+————————————————  
 版权声明：本文为CSDN博主「会打滚的咸鱼」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 原文链接：https://blog.csdn.net/qq_41988167/article/details/106202868
